@@ -1,59 +1,91 @@
 # Andrey Gorelikov
 
-**ML Platform / AI Infrastructure Engineer**  
+**AI Infrastructure / ML Platform Engineer**  
 Kubernetes · Distributed Systems · Spark · Cloud · GPU Infrastructure
 
-I’m an ML Platform / distributed systems engineer with **8+ years in software and data engineering** and **5+ years working with production ML platforms**.
+I’m an ML Platform / distributed systems engineer with **8+ years in software and data engineering** and **5+ years operating production ML platforms**.
 
-My core background is in **Scala, Apache Spark, Kubernetes, cloud infrastructure, CI/CD, distributed workloads, and production reliability**. More recently, I have been extending this foundation into **AI/GPU infrastructure** through hands-on Ray-on-Kubernetes work and MSc research on heterogeneous GPU scheduling and resource allocation.
+My strongest production background is in **Kubernetes, Apache Spark, cloud infrastructure, CI/CD, distributed workloads, observability, production reliability, and cross-layer troubleshooting**. At Criteo, I work on a production ML platform and drove the application/platform side of a VM-to-Kubernetes migration across **AWS EKS** and **GCP GKE**.
+
+I’m currently expanding this foundation toward **AI/GPU infrastructure and large-scale inference**, combining production platform engineering, hands-on GPU/ML infrastructure work, public infrastructure experiments, and MSc research on heterogeneous GPU allocation and scheduling.
 
 ## Current focus
 
-- ML Platform and AI Infrastructure
-- Kubernetes and distributed workloads
-- Ray on Kubernetes and reproducible ML workload execution
+- AI Infrastructure and ML Platform Engineering
+- Kubernetes and distributed ML workloads
+- LLM inference infrastructure and GPU performance
+- Production reliability and troubleshooting
 - GPU resource allocation and scheduling
-- Production reliability and cross-layer troubleshooting
-- MSc in Data Science & AI
+- MSc in Data Science & Artificial Intelligence
 
 ## Engineering path
 
 `Java / Backend` → `Scala / Big Data` → `ML Platform` → `Kubernetes / Cloud` → `AI / GPU Infrastructure`
 
-This GitHub intentionally keeps older learning and engineering projects: together they show the progression from backend development through distributed data systems and ML to my current focus on AI infrastructure.
+This GitHub intentionally keeps older learning and engineering projects. Together they show my technical progression over the years rather than only the most recent work.
+
+## Current hands-on project
+
+### [inference-service-vllm](https://github.com/BelstrelGit/inference-service-vllm)
+
+Hands-on LLM inference infrastructure lab with **vLLM on GKE and NVIDIA L4 GPU**, focused on latency, throughput, concurrency, context/output length, and KV-cache behavior.
+
+The project includes an async load generator, Kubernetes deployment, reproducible experiment reports, and measurements of TTFT, TPOT, throughput, saturation, and GPU/KV-cache pressure.
 
 ## Selected projects
 
-### [secure-llm-api](https://github.com/BelstrelGit/secure-llm-api)
-Secure FastAPI service for LLM access with JWT authentication, async SQLAlchemy, OpenRouter integration, layered architecture, and API documentation.
-
 ### [2-service-llm-consultation](https://github.com/BelstrelGit/2-service-llm-consultation)
+
 Distributed LLM consultation system with separate Auth and Bot services, FastAPI, Telegram, Celery, RabbitMQ, Redis, JWT, Docker Compose, and automated tests.
 
+### [secure-llm-api](https://github.com/BelstrelGit/secure-llm-api)
+
+Secure FastAPI service for LLM access with JWT authentication, async SQLAlchemy, OpenRouter integration, layered architecture, and API documentation.
+
 ### [ml-session-work](https://github.com/BelstrelGit/ml-session-work)
+
 Unsupervised-learning project for clustering scintillation-detector signals, including EDA, feature engineering, KMeans/GMM/IsolationForest experiments, reproducibility checks, and Kaggle evaluation.
 
 ### [ChemAI-Predict-the-Cure-Notebook](https://github.com/BelstrelGit/ChemAI-Predict-the-Cure-Notebook)
+
 ML pipeline for antiviral-activity prediction using RDKit descriptors, grouped cross-validation, ensemble models, and external ChEMBL-derived features.
 
 ### [OtusDataDriven](https://github.com/BelstrelGit/OtusDataDriven)
+
 Earlier data-engineering capstone covering Kafka, Spark Streaming and Batch, Airflow, storage layers, Docker, and Jupyter analytics.
 
-## Current research
+## Professional background
+
+At Criteo, I develop and operate a production ML platform built around **Scala and Apache Spark**, integrating ML workflows with distributed compute, cloud storage, and internal services.
+
+My platform work includes:
+
+- Kubernetes delivery across AWS EKS and GCP GKE;
+- Kubernetes manifests and Docker images;
+- cloud authentication and storage integration;
+- production troubleshooting and root-cause analysis;
+- scheduled on-call and deployment support;
+- requirements gathering, PoCs/demos, stakeholder coordination, and production handoff.
+
+I also contributed to a cross-functional GPU platform initiative where I built and validated **Ray-on-Kubernetes workflows** for distributed ML workloads, including cluster creation, job submission, runtime environments, dependency packaging, and integration troubleshooting.
+
+## MSc research
 
 I’m pursuing an **MSc in Data Science and Artificial Intelligence**.
 
-My research focuses on **heterogeneous GPU resource allocation and scheduling**, including:
+My research focuses on **heterogeneous GPU scheduling and resource allocation**, including:
 
 - selecting suitable GPU type/count for workloads;
 - Job Completion Time (JCT) and makespan;
 - resource utilization;
 - cost-aware scheduling;
-- experimentation across heterogeneous GPU profiles.
+- experiments across **T4, L4, and A100** GPU profiles;
+- discrete-event simulation and real fine-tuning measurements;
+- Kubernetes/Kueue workload execution.
 
 ## Technologies
 
-**Platform / Distributed Systems:** Kubernetes, Apache Spark, Airflow, Ray, Docker  
+**Platform / Distributed Systems:** Kubernetes, Apache Spark, Spark-on-Kubernetes, Airflow, Ray, Docker  
 **Cloud / Infrastructure:** AWS, GCP, GitLab CI, Vault, Grafana  
 **Data / Streaming:** Kafka, Flink, Hadoop ecosystem  
 **Languages:** Scala, Java, Python, Bash  
@@ -62,4 +94,5 @@ My research focuses on **heterogeneous GPU resource allocation and scheduling**,
 ## Connect
 
 - [LinkedIn](https://www.linkedin.com/in/belstrel/)
+- [GitHub](https://github.com/BelstrelGit)
 - telegram: belstrel
